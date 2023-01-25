@@ -58,6 +58,8 @@ const show = (n) => {
     }
     console.log(n);
 
+    if(selNum.indexOf(n) != -1) return; //중복으로 박스 선택 못하게함
+
     cnt++; //누른 횟수
     selNum.push(n); //눌러진 정보 저장
     console.log(selNum);
